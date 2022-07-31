@@ -6,3 +6,50 @@
 2. 파일업로드/다운로드 숙지
 3. 전자정부프레임워크 학습
 
+# 테이블 스키마
+tcom_bbs (게시글)
+- bbs_seq : 게시글 일련번호 (key, not null)
+- title : 제목 (not null)
+- name : 작성자명 (not null)
+- content : 내용 (not null)
+- passwd : 비밀번호 (not null)
+- open_yn : 공개여부 (비공개시 비밀번호 입력 요구)
+- notice_yn : 상단공지여부
+- reg_dt : 등록일시
+- mod_dt : 수정일시
+
+tcom_atch_file (첨부파일)
+- bbs_seq : 게시글 일련번호 (key, not null)
+- atch_seq : 첨부파일 일련번호 (key, not null)
+- file_path : 파일경로 (not null)
+- org_file_nm : 원본파일명
+- reg_dt : 등록일시
+
+# 1. 게시글 리스트
+[화면설명]
+1. 검색 구분 : 전체, 제목, 작성자
+2. 조회 : 검색 조건에 해당하는 게시글 목록을 조회한다.
+3. 상단공지의 경우 텍스트를 bold로 보여준다.
+  - 공지글의 경우 공지에도 있고, 목록에도 존재한다.
+5. 리스트를 선택하면 상세보기 화면으로 이동한다.
+6. 글쓰기
+  - 글쓰기 화면으로 이동한다.
+7. 조회수 기능
+
+[파일정보]
+1. 패키지명
+  - egovframework.wini.edu
+2. JAVA 파일명
+  - BbsListController
+  - BbsListService
+  - BbsListServiceImpl
+  - BbsListDAO
+  - BbsListVO
+3. Mapper 파일명
+  - BbsListDAO_SQL.xml
+4. JSP 파일명
+  - 위치 : egovframework\bbs
+  - 파일명 : BbsList.jsp
+
+
+# 2. 
