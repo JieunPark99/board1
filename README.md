@@ -36,6 +36,7 @@ tcom_atch_file (첨부파일)
   - 글쓰기 화면으로 이동한다.
 7. 조회수 기능
 
+
 [파일정보]
 1. 패키지명
   - egovframework.wini.edu
@@ -52,4 +53,61 @@ tcom_atch_file (첨부파일)
   - 파일명 : BbsList.jsp
 
 
-# 2. 
+# 2. 게시글 작성
+[화면설명]
+1. 비밀번호
+  - 최소 4자리 이상 10자리 미만
+  - 수정일 경우 입력한 비밀번호 update
+2. 공개구분
+  - default 공개
+3. 상단공지여부
+  - default false
+4. 등록
+  - 입력한 내용 저장
+5. 취소
+  - 게시글 리스트로 이동
+
+
+[파일정보]
+1. 패키지명
+  - egovframework.wini.edu
+2. JAVA 파일명
+  - BbsWriteController
+  - BbsWriteService
+  - BbsWriteServiceImpl
+  - BbsWriteDAO
+  - BbsWriteVO (직접추가)
+3. Mapper 파일명
+  - BbsWriteDAO_SQL.xml
+4. JSP 파일명
+  - 위치 : egovframework\bbs
+  - 파일명 : BbsWrite.jsp
+
+
+# 3. 게시글 상세보기
+[화면설명]
+1. 첨부파일
+  - 첨부파일명 클릭 시 파일 다운로드
+2. 수정
+  - 게시글 수정화면으로 이동(비밀번호 체크 후 이동가능)
+3. 삭제
+  - 게시글 삭제 (비밀번호 체크 후 삭제가능)
+
+
+[파일정보]
+1. 패키지명
+  - egovframework.wini.edu
+2. JAVA 파일명
+  - BbsDetailController
+  - BbsDetailService
+  - BbsDetailServiceImpl
+  - BbsDetailDAO
+  - BbsDetailVO
+3. Mapper 파일명
+  - BbsDetailDAO_SQL.xml
+4. JSP 파일명
+  - 위치 : egovframework\bbs
+  - 파일명 : BbsDetail.jsp
+
+
+
